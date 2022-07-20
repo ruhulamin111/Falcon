@@ -18,56 +18,110 @@
 <body>
     <header>
         <!-- nav bar  -->
-        <nav class="navbar navbar-expand-lg bg-light fixed-top">
-            <div class="container ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/icon.png" alt="" width="" height="50" class="d-inline-block">
-                        <span class="text-success fw-bold fs-4">Falcon</span>
-                    </a>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Listings
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Listing</a></li>
-                                <li><a class="dropdown-item" href="#">Listing (Grid)</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Product Overview</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Pages
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Cart</a></li>
-                                <li><a class="dropdown-item" href="#">Category</a></li>
-                                <li><a class="dropdown-item" href="#">Checkout</a></li>
-                                <li><a class="dropdown-item" href="#">Completed Order </a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success me-2" type="submit">Search</button>
-                    </form>
-                    <button class="btn btn-outline-success" type="submit">Log In</button>
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg bg-light fixed-top ">
+                <div class="container ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/icon.png" alt="" width="" height="50" class="d-inline-block">
+                            <span class="text-success fw-bold fs-4">Falcon</span>
+                        </a>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Listings
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Listing</a></li>
+                                    <li><a class="dropdown-item" href="#">Listing (Grid)</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Product Overview</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">Category</a></li>
+                                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                                    <li><a class="dropdown-item" href="#">Completed Order </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                        </form>
+                        <button class="btn btn-outline-success" type="submit">Log In</button>
+                    </div>
                 </div>
+            </nav>
+        </div>
+        <!-- banner  -->
+        <div class="banner">
+            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
+                <div class="carousel-indicators ">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active bg-success ">
+                        <img src="./images/hoodie.png" class="d-block w-50" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Celio Hoodie</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos asperiores optio deleniti,
+                                sunt voluptate odit quae architecto tenetur veniam id, explicabo consequatur culpa
+                                officia non nulla ab eius dicta? Nobis?</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-success">
+                        <img src="./images/cap.png" class="d-block w-50" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Falcon original cap</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam natus ea, dolorem
+                                debitis cum nemo laborum amet consectetur sapiente nisi cupiditate consequatur porro
+                                fugit aliquam, distinctio esse accusantium obcaecati nihil!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-success">
+                        <img src="./images/ipad.png" class="d-block w-50" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Apple ipad pro</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem nisi
+                                consequatur, obcaecati enim maxime, nobis debitis dolor ratione nostrum doloremque vel
+                                aperiam quam ullam labore nesciunt quaerat nam doloribus!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
